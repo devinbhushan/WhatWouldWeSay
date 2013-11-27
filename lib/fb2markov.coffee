@@ -64,6 +64,10 @@ getThreads = ->
 	return threadList
 
 # Returns number of messages in a given thread
+# TODO Query for thread ids given a user id. Aggregate all these threads in
+# using threads for samples
+# TODO Query
+# 	SELECT thread_id FROM thread WHERE thread_id IN (SELECT thread_id FROM thread WHERE folder_id =0) AND '657281669' IN recipients
 getMessageCount = (thread_id, countCB) ->
 	
 	parseCount = (messageCount) ->
