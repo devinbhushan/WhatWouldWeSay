@@ -11,12 +11,25 @@
 	<fb:login-button perms="email, read_mailbox" show-faces="true" width="200" max-rows="1"></fb:login-button>
 
 	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="main.css" rel="stylesheet">
 
 	<script src="../lib/fb2markov.js"></script>
+	<script src="../lib/markov.js"></script>
+	<script src="../lib/json2.js"></script>
+
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js" type="text/javascript"></script>
 	<script src="../bootstrap/js/bootstrap.min.js"></script>
-  	<input type="text" class="span3" id="search" data-provide="typeahead">
-  	<input type="submit" class="btn" onclick="handleFriend();" />
+	<div class = "friend_selector">
+	  	<input type="text" class="span3" id="search" data-provide="typeahead" disabled />
+	  	<input type="submit" class="btn" onclick="handleFriend();" disabled />
+	</div>
+  	<div class="wrapper">
+  		<div class="conversation_box">
+  			<ul class="chat">
+
+  			</ul>
+  		</div>
+  	</div>
 </body>
 </html>
