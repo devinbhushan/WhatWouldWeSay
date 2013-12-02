@@ -1,0 +1,27 @@
+.me .chat_content {
+	background-color: #82CAFF;
+}
+
+.other .chat_content{
+	background-color: #7FFF00;
+}
+
+.chat_content {
+	border-radius: 15px;
+	padding: 15px;
+}
+
+ul {
+	list-style: none;
+}
+
+.chat_name {
+	border-radius: px;
+	font-weight: bolder;
+}
+
+.chat_obj {
+	position:relative;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
